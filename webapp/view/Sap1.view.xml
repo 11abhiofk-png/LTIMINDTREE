@@ -1,0 +1,44 @@
+<mvc:View 
+    xmlns:form="sap.ui.layout.form" 
+    controllerName="project1.controller.Sap1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:tnt="sap.tnt">
+    <Page id="page1" title="{i18n>title}">
+
+
+    <Toolbar id="_IDGenToolHeader">
+        <Button id="_IDGenButton1" icon="sap-icon://menu2" type="Transparent"/>
+        <ToolbarSpacer id="_IDGenToolbarSpacer1" ></ToolbarSpacer>
+        <Text id="_IDGenText" text="Login Page"></Text>
+        <ToolbarSpacer id="_IDGenToolbarSpacer2"></ToolbarSpacer>
+        <Button id="_IDGenButton2" text="Hi,Admin" type="Transparent"></Button>
+    </Toolbar>
+
+    
+    <content>
+        <VBox id="_IDGenVBox" class="custform" fitContainer="true">
+             <form:SimpleForm id="_IDGenSimpleForm1" title="Login" editable="true" layout="ResponsiveGridLayout"
+             xmlns:form="sap.ui.layout.form">
+                 <Label id="_IDGenLabel1" text="Username :"/>
+                 <Input id="Input1" xmlns="sap.m" placeholder="Enter your User Name" />
+                 <Label id="_IDGenLabel2" text="Password :"/>
+                 <Input id="Input2" xmlns="sap.m" placeholder="Enter your Password" />
+                 <Button id="_IDGenButton" text="Login" type="Emphasized" press="onNavigateToList()" />
+             </form:SimpleForm>
+        </VBox>
+    </content>
+    
+    <footer>
+    <Bar id="_IDGenBar" >
+         <contentLeft>
+         <Text id="_IDGenText2" text="Abhishek_Cars"></Text>
+         </contentLeft>
+         <contentRight>
+         <Text id="_IDGenText3" text="Trending Cars"></Text>
+         </contentRight>
+    </Bar>
+    </footer>
+
+
+    </Page>
+</mvc:View>

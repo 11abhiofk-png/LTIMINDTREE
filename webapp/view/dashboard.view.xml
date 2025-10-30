@@ -1,0 +1,69 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    controllerName="project1.controller.Sap1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="page2"
+        title="{i18n>title}"
+    >
+        <Toolbar id="_IDGenToolHeader1">
+            <Button
+                id="_IDGenButton11"
+                icon="sap-icon://menu2"
+                type="Transparent"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer11" />
+            <Text
+                id="_IDGenText12"
+                text="Login Page"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer21" />
+            <Button
+                id="_IDGenButton22"
+                text="Welcome,{oUserModel>/username}"
+                type="Transparent"
+            />
+        </Toolbar>
+
+
+        
+
+<Table id="_IDGenTable" items="{oUserModel>/Products}">
+  <columns>
+    <Column id="_IDGenColumn">
+      <Text id="_IDGenText1" text="Product Name" />
+    </Column>
+  </columns>
+  <items>
+    <ColumnListItem id="_IDGenColumnListItem">
+      <cells>
+        <Text id="_IDGenText4" text="{oUserModel>/ProductName}" />
+      </cells>
+    </ColumnListItem>
+  </items>
+</Table>
+
+
+
+
+        <footer>
+            <Bar id="_IDGenBar1">
+                <contentLeft>
+                    <Text
+                        id="_IDGenText22"
+                        text="Abhishek_Cars"
+                    />
+                </contentLeft>
+                <contentRight>
+                    <Text
+                        id="_IDGenText31"
+                        text="Trending Cars"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
