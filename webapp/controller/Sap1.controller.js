@@ -27,7 +27,7 @@ sap.ui.define([
             let username = this.getView().byId("Input1").getValue();
             let password = this.getView().byId("Input2").getValue();
 
-            if (username == '' || password == '') {
+            if (username === '' || password === '') {
                 MessageBox.error("Invalid Username/Password");
             } else {
                 var oNorthwindModel = this.getView().getModel("northwind");
