@@ -19,7 +19,7 @@ sap.ui.define([
         },
 
         _onObjectMatched: function (oEvent) {
-            var user_name=oEvent.getParameter("arguments").name;
+            var user_name = oEvent.getParameter("arguments").name;
             var pass_word = oEvent.getParameter("arguments").pass; // corrected from 'password' to 'pass'
             this.getView().getModel().setProperty("/username", user_name);
             this.getView().getModel().setProperty("/password", pass_word);
@@ -30,7 +30,7 @@ sap.ui.define([
             let password = this.getView().byId("Input2").getValue();
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
            
-            if(username==''||password==''){
+            if(username === ''||password === ''){
                 MessageBox.alert("Incorrect Username");
             }
             else{ 

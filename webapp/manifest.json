@@ -18,10 +18,10 @@
 
 "dataSources": {
   "Northwind2": {
-    "uri": "http://localhost:8081/https://services.odata.org/v3/northwind2/northwind2.svc/",
+    "uri": "destinations/northwind/",
     "type": "OData",
     "settings": {
-      "odataVersion": "3.0",
+      "odataVersion": "2.0",
       "localUri": "localService/metadata.xml"
     }
   }
@@ -94,7 +94,7 @@
         "viewType": "XML",
         "path": "project1.view",
         "async": true,
-        "viewPath": "project1.view",
+        "Path": "project1.view",
         "clearControlAggregation": false
       },
       "routes": [
