@@ -23,7 +23,7 @@
             <ToolbarSpacer id="_IDGenToolbarSpacer21" />
             <Button
                 id="_IDGenButton22"
-                text="Welcome,{oUserModel>/username}"
+                text="Welcome, {/username}"
                 type="Transparent"
             />
         </Toolbar>
@@ -31,20 +31,9 @@
 
         
 
-<Table id="_IDGenTable" items="{oUserModel>/Products}">
-  <columns>
-    <Column id="_IDGenColumn">
-      <Text id="_IDGenText1" text="Product Name" />
-    </Column>
-  </columns>
-  <items>
-    <ColumnListItem id="_IDGenColumnListItem">
-      <cells>
-        <Text id="_IDGenText4" text="{oUserModel>/ProductName}" />
-      </cells>
-    </ColumnListItem>
-  </items>
-</Table>
+        <List id="_IDGenList" items="{/Products}">
+           <StandardListItem id="_IDGenStandardListItem" type="Active" title="{ProductName}"></StandardListItem>
+        </List>
 
 
 
